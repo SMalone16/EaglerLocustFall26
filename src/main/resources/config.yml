@@ -1,0 +1,44 @@
+# EaglerLocustFall26 classroom tuning
+
+# A player must have no other player inside this horizontal radius to be eligible.
+isolation-radius: 24.0
+
+# The initial/reappearance spawn tests both X and Z offsets independently.
+spawn-min-axis-distance: 20
+spawn-max-axis-distance: 36
+spawn-search-attempts: 72
+
+# Movement is applied every 2 server ticks. These are blocks per movement tick.
+stalk-speed: 0.34
+ambush-speed: 0.72
+flee-speed: 0.88
+
+# Herobrine tries to stay roughly this close while stalking from behind.
+stalk-stop-distance: 4.5
+attack-range: 2.7
+attack-damage: 16.0
+attack-cooldown-ticks: 16
+
+# Looking directly at Herobrine makes it flee and disappear. It can return after
+# this cooldown during the same night if the original target is still eligible.
+look-directly-dot: 0.975
+facing-dot: 0.20
+flee-success-distance: 18.0
+flee-timeout-seconds: 8
+reappear-cooldown-seconds: 60
+
+# If stalking gets blocked while unseen, Herobrine may relocate to fresh cover.
+shadow-relocate-min-distance: 8
+shadow-relocate-max-distance: 16
+shadow-relocate-cooldown-seconds: 4
+
+# A click/drag in the player's own inventory is treated as a distraction for this
+# many milliseconds. Containers, crafting tables and furnaces stay distracting
+# until the inventory closes.
+interaction-busy-window-ms: 3000
+
+# Exact server broadcast on a successful first spawn each night.
+spawn-message: "watch your back.."
+
+# Mojang texture-server URL for a classic Herobrine skin.
+herobrine-skin-url: "https://textures.minecraft.net/texture/98b7ca3c7d314a61abed8fc18d797fc30b6efc8445425c4e250997e52e6cb"

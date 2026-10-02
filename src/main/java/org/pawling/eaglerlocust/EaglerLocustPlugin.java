@@ -27,7 +27,7 @@ import org.bukkit.event.player.PlayerChangedWorldEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.profile.PlayerProfile;
+import com.destroystokyo.paper.profile.PlayerProfile;
 import org.bukkit.profile.PlayerTextures;
 import org.bukkit.util.RayTraceResult;
 import org.bukkit.util.Vector;
@@ -387,7 +387,7 @@ public final class EaglerLocustPlugin extends JavaPlugin implements Listener, Ta
                 mannequin.setHealth(40.0);
             }
 
-            PlayerProfile profile = Bukkit.createPlayerProfile(UUID.randomUUID(), "Herobrine");
+            PlayerProfile profile = Bukkit.createProfile(UUID.randomUUID(), "Herobrine");
             PlayerTextures textures = profile.getTextures();
             textures.setSkin(herobrineSkinUrl);
             profile.setTextures(textures);

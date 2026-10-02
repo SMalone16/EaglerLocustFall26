@@ -1,0 +1,17 @@
+name: EaglerLocustFall26
+version: '1.0.0'
+main: org.pawling.eaglerlocust.EaglerLocustPlugin
+api-version: '1.21.11'
+author: Pawling CSD Game Development
+description: A single Herobrine-like night stalker that targets isolated players and attacks while they are distracted.
+
+commands:
+  locust:
+    description: EaglerLocust teacher testing and administration tools
+    usage: /locust <status|force <player>|dismiss|reload>
+    permission: eaglerlocust.admin
+
+permissions:
+  eaglerlocust.admin:
+    description: Allows EaglerLocust testing and administration commands
+    default: op
